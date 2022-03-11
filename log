@@ -123,3 +123,34 @@ exercises.c:39:8: error: unused variable 'aux' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 cca3860
+vi., 11 de mar. de 2022 11:59:05: 
+ exercises.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crearPersona':
+exercises.c:58:40: error: implicit declaration of function 'sinzeof' [-Werror=implicit-function-declaration]
+    Persona* sujeto =(Persona*) malloc (sinzeof(Persona) );
+                                        ^~~~~~~
+exercises.c:58:48: error: expected expression before 'Persona'
+    Persona* sujeto =(Persona*) malloc (sinzeof(Persona) );
+                                                ^~~~~~~
+exercises.c:59:4: error: implicit declaration of function 'strepy' [-Werror=implicit-function-declaration]
+    strepy(sujeto -> nombre, nombre );
+    ^~~~~~
+exercises.c: At top level:
+exercises.c:61:11: error: expected '=', ',', ';', 'asm' or '__attribute__' before '->' token
+    sujeto -> edad = edad;
+           ^~
+exercises.c:62:4: error: expected identifier or '(' before 'return'
+    return sujeto;
+    ^~~~~~
+exercises.c:63:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+exercises.c: In function 'crearPersona':
+exercises.c:60:4: error: control reaches end of non-void function [-Werror=return-type]
+    strepy(sujeto -> rut , rut );}
+    ^~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+f0bd761
