@@ -171,3 +171,17 @@ exercises.c:59:4: error: implicit declaration of function 'strepy' [-Werror=impl
 cc1.exe: all warnings being treated as errors
 Compilation failed
 b689048
+vi., 11 de mar. de 2022 12:01:46: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crearPersona':
+exercises.c:58:40: error: implicit declaration of function 'sinzeof' [-Werror=implicit-function-declaration]
+    Persona* sujeto =(Persona*) malloc (sinzeof(Persona) );
+                                        ^~~~~~~
+exercises.c:58:48: error: expected expression before 'Persona'
+    Persona* sujeto =(Persona*) malloc (sinzeof(Persona) );
+                                                ^~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+c4a051e
