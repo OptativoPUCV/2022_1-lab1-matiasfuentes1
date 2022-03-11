@@ -112,3 +112,14 @@ vi., 11 de mar. de 2022 11:32:50:
  tests:  1|6
 total_score: 10/70
 bc8a46e
+vi., 11 de mar. de 2022 11:45:16: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaNultimos':
+exercises.c:39:8: error: unused variable 'aux' [-Werror=unused-variable]
+    int aux = n -m ;
+        ^~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+cca3860
