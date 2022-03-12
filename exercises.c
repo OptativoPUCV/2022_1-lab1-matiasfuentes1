@@ -76,7 +76,7 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
-   return NULL;
+  
 }
 
 /*
@@ -103,9 +103,10 @@ Función que suma los vectores `a` y `b` y
 actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector * a, Vector * b, Vector * c) {
+    
     int largo = a -> capacidad;
     for(int i = 0 ; i < largo ; i++ ){
-       c -> datos[i] = a -> datos[i] = b -> datos[i] ;
+       c -> datos[i] = a -> datos[i] + b -> datos[i] ;
     }
 
 }
