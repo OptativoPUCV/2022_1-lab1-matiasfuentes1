@@ -55,7 +55,7 @@ typedef struct {
 
 
 Persona* crearPersona(char nombre[], char rut[], int edad) {
-   Persona* sujeto =(Persona*) malloc (sizeof(Persona) );
+   Poersona* sujeto =(Persna*) malloc (sizeof(Persona) );
    strcpy(sujeto -> nombre, nombre );
    strcpy(sujeto -> rut , rut );
    sujeto -> edad = edad; 
@@ -76,7 +76,11 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
-  
+     Vector* n =(Vector*) malloc (sizeof(n));
+     n -> datos = 0;
+     n -> capacidad = 0;
+
+     return n;
 }
 
 /*
@@ -86,6 +90,7 @@ la cual asigna el valor a la posición i del vector v.
 */
 void asignarValor(Vector * v, int i, int valor) {
 
+return NULL ;
 }
 
 /*
