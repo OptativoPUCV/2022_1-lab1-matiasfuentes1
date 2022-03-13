@@ -303,3 +303,47 @@ exercises.c:91:6: note: declared here
 cc1.exe: all warnings being treated as errors
 Compilation failed
 0a27d87
+sá., 12 de mar. de 2022 22:39:41: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crearPersona':
+exercises.c:58:4: error: unknown type name 'Poersona'
+    Poersona* sujeto =(Persna*) malloc (sizeof(Persona) );
+    ^~~~~~~~
+exercises.c:58:23: error: 'Persna' undeclared (first use in this function)
+    Poersona* sujeto =(Persna*) malloc (sizeof(Persona) );
+                       ^~~~~~
+exercises.c:58:23: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:58:30: error: expected expression before ')' token
+    Poersona* sujeto =(Persna*) malloc (sizeof(Persona) );
+                              ^
+exercises.c:59:18: error: request for member 'nombre' in something not a structure or union
+    strcpy(sujeto -> nombre, nombre );
+                  ^~
+exercises.c:60:18: error: request for member 'rut' in something not a structure or union
+    strcpy(sujeto -> rut , rut );
+                  ^~
+exercises.c:61:11: error: request for member 'edad' in something not a structure or union
+    sujeto -> edad = edad;
+           ^~
+exercises.c:62:11: error: return from incompatible pointer type [-Werror=incompatible-pointer-types]
+    return sujeto;
+           ^~~~~~
+exercises.c: In function 'crearVector':
+exercises.c:80:14: error: 'n' redeclared as different kind of symbol
+      Vector* n =(Vector*) malloc(sizeof(Vector));
+              ^
+exercises.c:78:26: note: previous definition of 'n' was here
+ Vector * crearVector(int n) {
+                          ^
+exercises.c: In function 'asignarValor':
+exercises.c:93:8: error: 'return' with a value, in function returning void [-Werror]
+ return NULL ;
+        ^~~~
+exercises.c:91:6: note: declared here
+ void asignarValor(Vector * v, int i, int valor) {
+      ^~~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+68dc4ab
