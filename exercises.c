@@ -78,7 +78,7 @@ Vector * crearVector(int n) {
      Vector* aux =(Vector*) malloc(sizeof(Vector));
       aux->datos =(int*) calloc (n,sizeof(Vector));
       aux->capacidad = n;
-     return Vector;
+     return aux;
 }
 
 /*
