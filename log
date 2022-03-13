@@ -577,3 +577,17 @@ do., 13 de mar. de 2022 18:09:16:
  tests:  3|4
 total_score: 30/70
 7c6a6c2
+do., 13 de mar. de 2022 18:10:58: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:0:
+exercises.c: In function 'crearPersona':
+exercises.c:61:19: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+    sujeto -> edad , edad ;
+                   ^
+exercises.c:61:4: error: statement with no effect [-Werror=unused-value]
+    sujeto -> edad , edad ;
+    ^~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+1a30fe8
